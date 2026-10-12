@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARIF STORE - Jual Beli Akun, Rekber & Joki MLBB</title>
+  <title>ARIF STORE</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-white min-h-screen">
 
-  <!-- Navbar -->
+<!-- Navbar -->
   <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <div>
-        <a href="#home" class="text-xl font-black text-amber-400 tracking-wider">ARIF STORE</a>
-        <p class="text-[10px] text-slate-400">Store MLBB Aman & Terpercaya</p>
+      
+      <!-- Brand & Logo -->
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="ARIF STORE" class="w-9 h-9 rounded-lg object-cover border border-amber-400/30">
+        <div>
+          <a href="#home" class="text-xl font-black text-amber-400 tracking-wider">ARIF STORE</a>
+          <p class="text-[10px] text-slate-400">Store MLBB Aman & Terpercaya</p>
+        </div>
       </div>
 
+      <!-- Menu Navigasi Desktop -->
       <nav class="hidden md:flex items-center space-x-6 text-sm">
         <a href="#home" class="text-slate-300 hover:text-amber-400 transition">Home</a>
         <a href="#katalog" class="text-slate-300 hover:text-amber-400 transition">Katalog Akun</a>
@@ -23,10 +30,11 @@
         <a href="#joki" class="text-slate-300 hover:text-amber-400 transition">Joki MLBB</a>
       </nav>
 
+      <!-- Tombol Admin -->
       <a href="admin.html" class="text-xs text-slate-500 hover:text-slate-300 border border-slate-800 px-3 py-1.5 rounded-lg transition">Admin</a>
     </div>
 
-    <!-- Mobile Nav -->
+    <!-- Sub-Navbar Khusus Tampilan HP -->
     <div class="md:hidden flex justify-around border-t border-slate-800/80 py-2 text-xs bg-slate-900">
       <a href="#home" class="text-slate-300 hover:text-amber-400">Home</a>
       <a href="#katalog" class="text-slate-300 hover:text-amber-400">Katalog</a>
