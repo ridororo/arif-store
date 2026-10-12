@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIF STORE - Jual Beli Akun, Rekber & Joki MLBB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white min-h-screen">
+
+  <!-- Navbar -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div>
+        <a href="#home" class="text-xl font-black text-amber-400 tracking-wider">ARIF STORE</a>
+        <p class="text-[10px] text-slate-400">Store MLBB Aman & Terpercaya</p>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm">
+        <a href="#home" class="text-slate-300 hover:text-amber-400 transition">Home</a>
+        <a href="#katalog" class="text-slate-300 hover:text-amber-400 transition">Katalog Akun</a>
+        <a href="#rekber" class="text-slate-300 hover:text-amber-400 transition">Jasa Rekber</a>
+        <a href="#joki" class="text-slate-300 hover:text-amber-400 transition">Joki MLBB</a>
+      </nav>
+
+      <a href="admin.html" class="text-xs text-slate-500 hover:text-slate-300 border border-slate-800 px-3 py-1.5 rounded-lg transition">Admin</a>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="md:hidden flex justify-around border-t border-slate-800/80 py-2 text-xs bg-slate-900">
+      <a href="#home" class="text-slate-300 hover:text-amber-400">Home</a>
+      <a href="#katalog" class="text-slate-300 hover:text-amber-400">Katalog</a>
+      <a href="#rekber" class="text-slate-300 hover:text-amber-400">Rekber</a>
+      <a href="#joki" class="text-slate-300 hover:text-amber-400">Joki</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-12 px-4 text-center border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950">
+    <div class="max-w-3xl mx-auto">
+      <span class="text-xs bg-amber-500/10 text-amber-400 px-3 py-1 rounded-full border border-amber-500/20 font-semibold tracking-wide">Pusat Transaksi Mobile Legends</span>
+      <h1 class="text-3xl sm:text-5xl font-black mt-4 tracking-tight">Jual Beli Akun, Rekber, & Joki Terpercaya</h1>
+      <p class="text-slate-400 text-sm sm:text-base mt-3">Proses cepat, garansi aman, dan transaksi langsung ditangani admin via WhatsApp resmi.</p>
+      
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <a href="#katalog" class="bg-amber-500 hover:bg-amber-400 text-black text-sm font-bold px-5 py-2.5 rounded-xl transition">Lihat Katalog Akun</a>
+        <a href="#rekber" class="bg-slate-800 hover:bg-slate-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl border border-slate-700 transition">Jasa Rekber</a>
+        <a href="#joki" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition">Jasa Joki</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Section -->
+  <section id="katalog" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="flex justify-between items-end mb-6">
+      <div>
+        <h2 class="text-xl font-bold text-slate-100">Katalog Akun Tersedia</h2>
+        <p class="text-xs text-slate-400">Pilih akun idamanmu berdasarkan kode dan spek</p>
+      </div>
+    </div>
+    
+    <div id="loading" class="text-center text-slate-500 py-12 text-sm">Memuat akun dari server...</div>
+    <div id="katalog-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 hidden"></div>
+  </section>
+
+  <!-- Rekber Section -->
+  <section id="rekber" class="border-t border-slate-800 bg-slate-900/40 py-12 px-4">
+    <div class="max-w-2xl mx-auto bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl text-center">
+      <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center mx-auto mb-3 font-bold text-xl">🛡️</div>
+      <h2 class="text-2xl font-bold text-slate-100">Jasa Rekber ARIF STORE</h2>
+      <p class="text-slate-400 text-xs sm:text-sm mt-2 max-w-md mx-auto">Transaksi akun aman pihak ketiga tanpa takut rip/scam. Gunakan jasa rekber resmi kami.</p>
+      
+      <div class="mt-6">
+        <a href="https://wa.me/6285832787212?text=Halo%20Admin%20ARIF%20STORE,%20saya%20ingin%20menggunakan%20jasa%20rekber%20untuk%20transaksi" 
+           target="_blank" 
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-emerald-950">
+          <span>Chat WhatsApp Rekber (085832787212)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Joki Section -->
+  <section id="joki" class="border-t border-slate-800 py-12 px-4">
+    <div class="max-w-md mx-auto bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+      <div class="text-center mb-5">
+        <h2 class="text-xl font-bold text-amber-400">Order Joki MLBB</h2>
+        <p class="text-xs text-slate-400 mt-1">Isi rank asal dan rank impianmu di bawah ini:</p>
+      </div>
+
+      <form id="form-joki" class="space-y-4">
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Dari Rank Mana?</label>
+          <input type="text" id="joki-asal" required placeholder="Contoh: Epic II bintang 3" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Mau ke Rank Apa?</label>
+          <input type="text" id="joki-tujuan" required placeholder="Contoh: Mythic Honor bintang 25" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-lg text-sm transition">
+          Order Joki via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal Galeri Foto -->
+  <div id="modal-galeri" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-4 relative flex flex-col max-h-[90vh]">
+      <button id="btn-close-modal" class="absolute top-3 right-3 text-slate-400 hover:text-white bg-slate-800 p-1.5 rounded-full z-10 text-xs px-2.5">&times;</button>
+      <div class="w-full h-64 sm:h-80 bg-black rounded-lg overflow-hidden flex items-center justify-center">
+        <img id="modal-img-main" src="" class="w-full h-full object-contain">
+      </div>
+      <div id="modal-thumbnails" class="flex gap-2 mt-3 overflow-x-auto py-2"></div>
+    </div>
+  </div>
+
+  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+    &copy; ARIF STORE. All rights reserved.
+  </footer>
+
+  <script type="module">
+    import { db, NO_WA_ADMIN } from "./firebase-config.js";
+    import { ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+    // Joki Order Form
+    const formJoki = document.getElementById("form-joki");
+    formJoki.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const asal = document.getElementById("joki-asal").value;
+      const tujuan = document.getElementById("joki-tujuan").value;
+      
+      const pesan = `Halo Admin ARIF STORE, saya mau order joki akun MLBB:\n- Rank Asal: ${asal}\n- Rank Tujuan: ${tujuan}\nBerapa harganya dan estimasi pengerjaannya?`;
+      const url = `https://wa.me/${NO_WA_ADMIN}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, "_blank");
+    });
+
+    // Galeri Modal
+    const modal = document.getElementById("modal-galeri");
+    const modalMainImg = document.getElementById("modal-img-main");
+    const modalThumbs = document.getElementById("modal-thumbnails");
+    const btnCloseModal = document.getElementById("btn-close-modal");
+
+    btnCloseModal.addEventListener("click", () => modal.classList.add("hidden"));
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.add("hidden");
+    });
+
+    window.openGallery = (images) => {
+      if (!images || images.length === 0) return;
+      modalMainImg.src = images[0];
+      modalThumbs.innerHTML = "";
+
+      images.forEach((imgUrl) => {
+        const thumb = document.createElement("img");
+        thumb.src = imgUrl;
+        thumb.className = "w-16 h-12 object-cover rounded cursor-pointer border border-slate-700 hover:border-amber-400 shrink-0";
+        thumb.onclick = () => { modalMainImg.src = imgUrl; };
+        modalThumbs.appendChild(thumb);
+      });
+
+      modal.classList.remove("hidden");
+    };
+
+    // Load Data Katalog
+    const loading = document.getElementById("loading");
+    const grid = document.getElementById("katalog-grid");
+
+    onValue(ref(db, "accounts"), (snapshot) => {
+      grid.innerHTML = "";
+      const data = snapshot.val();
+
+      if (!data) {
+        loading.innerText = "Belum ada akun yang di-upload oleh admin.";
+        loading.classList.remove("hidden");
+        grid.classList.add("hidden");
+        return;
+      }
+
+      const items = Object.keys(data).map(key => ({ id: key, ...data[key] })).reverse();
+
+      items.forEach((item) => {
+        const formatHarga = new Intl.NumberFormat("id-ID").format(item.price);
+        const kode = item.code || "#ML-01";
+        const pesanWa = `Halo Admin ARIF STORE, saya berminat dengan akun [${kode}] ${item.title} seharga Rp ${formatHarga}`;
+        const linkWa = `https://wa.me/${NO_WA_ADMIN}?text=${encodeURIComponent(pesanWa)}`;
+        const imagesList = item.images || [item.image_url];
+
+        const card = document.createElement("div");
+        card.className = "bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col hover:border-slate-700 transition";
+        card.innerHTML = `
+          <div class="relative cursor-pointer group" onclick='openGallery(${JSON.stringify(imagesList)})'>
+            <img src="${imagesList[0]}" class="w-full h-48 object-cover bg-slate-800 group-hover:opacity-90 transition" alt="${item.title}">
+            <span class="absolute top-2 left-2 bg-amber-500/90 text-black text-[11px] font-mono font-black px-2 py-0.5 rounded shadow">
+              ${kode}
+            </span>
+            <span class="absolute bottom-2 right-2 bg-black/70 backdrop-blur text-[10px] px-2 py-0.5 rounded text-slate-300 font-medium">
+              📷 ${imagesList.length} Foto
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-bold text-sm text-slate-100 line-clamp-1">${item.title}</h3>
+                <span class="text-[11px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded border border-amber-500/20 whitespace-nowrap">${item.rank}</span>
+              </div>
+              <div class="text-xs text-slate-400 space-x-2">
+                <span>Skin: ${item.total_skin}</span>
+                <span>•</span>
+                <span>Hero: ${item.total_hero}</span>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-500 block">Harga</span>
+                <span class="text-base font-bold text-amber-400">Rp ${formatHarga}</span>
+              </div>
+              <a href="${linkWa}" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs px-3.5 py-2 rounded-lg font-semibold transition">
+                Beli via WA
+              </a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      loading.classList.add("hidden");
+      grid.classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>
